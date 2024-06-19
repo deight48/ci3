@@ -2,6 +2,9 @@
 Que es CodeIgniter
 ###################
 
+CodeIgniter es un framework para el desarrollo de aplicaciones en php, que utiliza el MVC. Esto 
+permite a los programadores o desarrolladores Web mejorar su forma de trabajar, además de dar 
+una mayor velocidad a la hora de crear páginas Webs.
 El MVC o Modelo Vista Controlador es un patrón de arquitectura de software que separa la lógica 
 de control, la interfaz del usuario y los datos del sistema. Para ello MVC propone la construcción 
 de tres componentes distintos que son el modelo, la vista y el controlador, es decir por un lado 
