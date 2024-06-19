@@ -10,32 +10,14 @@ interface and logical structure to access these libraries. CodeIgniter lets
 you creatively focus on your project by minimizing the amount of code needed
 for a given task.
 
-Hay que configurar en el archivo config.php la constante base_url
-$config['base_url'] = 'http://'.$_SERVER['HTTP_HOST'].'/ci3';
+Hay que configurar en el archivo config.php la constante base_url para que apunte 
+al directorio donde está el framework del codeigniter. Puede usarse con $_SERVER['HTTP_HOST']:
 
-El archivo autoload.php
+$config['base_url']
+
+En el archivo autoload.php se deben setear los arrays libraries y helper con los valores:
 $autoload['libraries'] = array('database','session');
 $autoload['helper'] = array('url','form','html');
 
-El archivo database.php
-$db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '12345678',
-	'database' => '',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'development'),
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
+El archivo database.php se deben setear los valores de la variable $db['default']
+con el username, password y database con los valores correspondientes
